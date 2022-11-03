@@ -4,13 +4,14 @@ const fs = require('fs')
 const db = require('nedb')
 const appServer = express()
 const database = new db('./data.db');
+const port = process.env.port || 3000
 require('dotenv').config()
-    
-appServer.listen(3000,(err)=>{
+
+appServer.listen(port,(err)=>{
     if(err){
         console.log("something went wrong !!!")
     }
-    console.log("server listen on port 3000")
+    console.log(`server listen on port ${port}`)
 })
 appServer.use(express.static("public"))
 appServer.use(express.json({limit:'1mb'}))
