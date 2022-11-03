@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    
+    <title>weather Geo App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="container">
+        <div class="searchSection">
+            <p>Latitude : <span id="lat"></span></p> 
+            <p>Longitude : <span id="long"></span></p> 
+            <input class="btn_info" type="submit" id="geoBtn" value="Geolocate me">
+        </div>
+        <script src="./app.js"></script>
+        <div class="searchSection desc">
+            <div class="btn_info">City: <span id="name"></span> </div>
+            <div class="btn_info">Summary:  <span id="summary"></span> </div>
+            <div class="btn_info">Temperature:  <span id="temp"></span> </div>
+            <div class="btn_info">Air quality:  <span id="airQ"></span> </div>
+        </div>
+    </div>
+    <div class="checkSection">
+          <a href="./log/resultData.html" class="btn_info btnCheck">
+            Data Representation
+          </a>
+    </div>
+</body>
+</html>
